@@ -14,7 +14,7 @@ public class Main {
 		// ----------------------
 		// Variable - Cities -String example
 		String sehir1 = "Ankara";
-		String sehir2 = "İstanbul";
+		String sehir2 = "İstanbul";  
 		sehir1 = sehir2;
 		sehir2 = "İzmir";
 		System.out.println(sehir1);
