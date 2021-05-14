@@ -2,7 +2,7 @@
 Java Intro
 (Java & React) Yazılım Geliştirici Yetiştirme Kampı 
 
-/*
+
 1. Gün Java Giriş - 21 NiSAN 2021
 Java Giriş
 https://www.youtube.com/watch?v=HB0T0hAMk0k
@@ -27,5 +27,5 @@ https://www.youtube.com/watch?v=b_kiGUJSOQM
 Java Kurumsal Mimarilere Giriş"	"DersLinki: 
 https://www.youtube.com/watch?v=yaBPeS65vwM
 
-*/
+
 
