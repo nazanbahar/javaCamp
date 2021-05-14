@@ -1,7 +1,21 @@
 ### javaCamp
-Java Intro
-(Java & React) Yazılım Geliştirici Yetiştirme Kampı 
 
+[kodlama.io](https://www.kodlama.io)
+[(Java & React) lesson links](https://www.youtube.com/watch?v=HB0T0hAMk0k&list=PLqG356ExoxZUuVYKLuiQLnref7Y4ims87)
+
+
+
+
+<!--
+---------------------------------
+`console.log("Hello, World!");`
+-------------------------------
+```function (){
+console.log("Hello, World!);
+}```
+----------------------------------------------
+[kodlama.io](https://www.kodlama.io)
+-------------------------------------
 <!--- comment --->
 <!--- 
 1. Gün Java Giriş - 21 NiSAN 2021
