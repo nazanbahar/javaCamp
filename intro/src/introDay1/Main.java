@@ -1,4 +1,4 @@
-package intro;
+package introDay1;
 
 public class Main {
 
@@ -97,8 +97,8 @@ public class Main {
 		System.out.println(internetSubeButonu);
 		double dolarDun = 8.20;
 		double dolarBugun = 8.20;
-		int vade = 36;
-		boolean dustuMu = false;
+		//int vade = 36;
+		//boolean dustuMu = false;
 
 		if (dolarBugun < dolarDun) {
 

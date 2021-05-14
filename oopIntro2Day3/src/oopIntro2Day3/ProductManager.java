@@ -1,4 +1,5 @@
-package oopIntro;
+package oopIntro2Day3;
+
 
 public class ProductManager {
 	public void addToCart(Product product) {
@@ -6,8 +7,7 @@ public class ProductManager {
 		//CQuares
 		//birden fazla parametre varsa virgülle yaz. ex. Product
 		System.out.println("Sepete ekleme code çağırıldı!");
-		System.out.println("Sepete eklendi : " + product.name);
-		
+		System.out.println("Sepete eklendi : " + product.getName());
 		
 	}
 }
