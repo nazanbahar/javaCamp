@@ -13,9 +13,9 @@ spring.datasource.url=jdbc:postgresql://localhost:5432/project_name
 spring.datasource.username=postgres
 spring.datasource.password=password
 spring.jpa.properties.javax.persistence.validation.mode = none 
-[links](https://github.com/engindemirog/Northwind-Database-Script-for-Postgre-Sql/blob/master/postgreconfig.txt)
-```
 
+```
+[engin demiroğ github postgreconfig link](https://github.com/engindemirog/Northwind-Database-Script-for-Postgre-Sql/blob/master/postgreconfig.txt)
 
 
 
