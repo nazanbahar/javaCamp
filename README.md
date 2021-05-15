@@ -3,7 +3,7 @@
 [kodlama.io](https://www.kodlama.io)
 [(Java & React) lesson links](https://www.youtube.com/watch?v=HB0T0hAMk0k&list=PLqG356ExoxZUuVYKLuiQLnref7Y4ims87)
 
-##### Code-1: postgre Configürasyonu
+##### Code-1: Eclipse Postgre Configürasyonu
 `path: /hrms/src/main/resources/application.properties`
 ```
 spring.jpa.properties.hibernate.dialect = org.hibernate.dialect.PostgreSQLDialect
@@ -13,7 +13,7 @@ spring.datasource.url=jdbc:postgresql://localhost:5432/project_name
 spring.datasource.username=postgres
 spring.datasource.password=password
 spring.jpa.properties.javax.persistence.validation.mode = none 
-
+[links](https://github.com/engindemirog/Northwind-Database-Script-for-Postgre-Sql/blob/master/postgreconfig.txt)
 ```
 
 
