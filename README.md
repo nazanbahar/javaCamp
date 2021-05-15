@@ -3,6 +3,20 @@
 [kodlama.io](https://www.kodlama.io)
 [(Java & React) lesson links](https://www.youtube.com/watch?v=HB0T0hAMk0k&list=PLqG356ExoxZUuVYKLuiQLnref7Y4ims87)
 
+##### Code-1: postgre Configürasyonu
+`path: /hrms/src/main/resources/application.properties`
+
+- spring.jpa.properties.hibernate.dialect = org.hibernate.dialect.PostgreSQLDialect
+- spring.jpa.hibernate.ddl-auto=validate
+- spring.jpa.hibernate.show-sql=true
+- spring.datasource.url=jdbc:postgresql://localhost:5432/project_name
+- spring.datasource.username=postgres
+- spring.datasource.password=password
+- spring.jpa.properties.javax.persistence.validation.mode = none 
+
+
+
+
 
 
 
