@@ -5,6 +5,7 @@
 
 ##### Code-1: Eclipse Postgre Configürasyonu
 `path: /hrms/src/main/resources/application.properties`
+[engin demiroğ github postgreconfig link](https://github.com/engindemirog/Northwind-Database-Script-for-Postgre-Sql/blob/master/postgreconfig.txt)
 ```
 spring.jpa.properties.hibernate.dialect = org.hibernate.dialect.PostgreSQLDialect
 spring.jpa.hibernate.ddl-auto=validate
@@ -15,8 +16,8 @@ spring.datasource.password=password
 spring.jpa.properties.javax.persistence.validation.mode = none 
 
 ```
-[engin demiroğ github postgreconfig link](https://github.com/engindemirog/Northwind-Database-Script-for-Postgre-Sql/blob/master/postgreconfig.txt)
 
+![searching](https://github.com/nazanbahar/NazanBahar/blob/main/github-social.png)
 
 
 
@@ -61,6 +62,10 @@ Lesson-4 - Homework-3 -GameStoreManagement
 6. Lesson6
 Lesson-6 - Homework-2 -hrmsProject - Human Resource Management System
 Kurumsal Mimaride Spring Boot
+
+------------------------------------------
+![searching](https://github.com/nazanbahar/NazanBahar/blob/main/github-social.png)
+
 
 ---------------------------------
 `console.log("Hello, World!");`
