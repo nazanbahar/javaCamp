@@ -6,22 +6,18 @@ import java.util.List;
 import kodlamaio.northwind.core.utilities.results.DataResult;
 import kodlamaio.northwind.core.utilities.results.Result;
 import kodlamaio.northwind.entities.concretes.Product;
+import kodlamaio.northwind.entities.dtos.ProductWithCategoryDto;
 
 public interface ProductService {
 	DataResult <List<Product>> getAll();
 
-	/*Pagination-(sayfalama) - pageNo: sayfa no pageSize:Bir sayfada kaç data var.
-	 * Bir adet interface methodu ekledik. */
+	//Pagination-(sayfalama) 
 	DataResult <List<Product>> getAll(int pageNo, int pageSize);
 	
-	/*Sorted-(şarta göre sıralama) --begin--*/
+	//Sorted-(şarta göre sıralama)
 	DataResult <List<Product>> getAllSorted();
 	
-	
 	Result add(Product product);
-	
-	
-	/*Bu yapının iş kodunu yazacağız.*/
 	
 	//signatures in the service...	
 	DataResult<Product> getByProductName(String productName);
@@ -38,24 +34,8 @@ public interface ProductService {
 	
 	DataResult<List<Product>>getByNameAndCategory(String productName, int categoryId);
 	
+	
+	//dtos
+	DataResult<List<ProductWithCategoryDto>> getProductWithCategoryDetails();
 }
 
-//===========================================================================
-//s1. List<Product> getAll(); yerine DataResult<T> döndüreceğiz. 
-//s2. T: tipini belirtelim.
-
-//===========================================================================
-
-
-/****************************************************************************
- VER-1: ListOfProduct
- * package kodlamaio.northwind.business.abstracts;
-
-import java.util.List;
-import kodlamaio.northwind.entities.concretes.Product;
-
-public interface ProductService {
-	<List<Product>> getAll();
-}
- ****************************************************************************** 
- */

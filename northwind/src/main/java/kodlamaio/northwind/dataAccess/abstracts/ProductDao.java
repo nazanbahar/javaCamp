@@ -8,6 +8,7 @@ import org.springframework.data.jpa.repository.Query;
 //import com.sun.org.apache.bcel.internal.generic.Select; --error import 
 
 import kodlamaio.northwind.entities.concretes.Product;
+import kodlamaio.northwind.entities.dtos.ProductWithCategoryDto;
 
 public interface ProductDao extends JpaRepository<Product, Integer> {
 	
@@ -30,17 +31,49 @@ public interface ProductDao extends JpaRepository<Product, Integer> {
 	@Query("From Product where productName=:productName and category.categoryId=:categoryId")
 	List<Product>getByNameAndCategory(String productName, int categoryId);
 	
+
 	/*
-	* JPQL --Altın kural veritabanı tablosunu unut Entity bu. Sanki veritabanı entity miş gibi düşün!
-	* parametre geçmek : ? @
-	* select * from product where product_name=something and categoryId=something
-	 * */
+	 * dto
+	 * herzaman base tablodan git.
+	 * 
+	 select * from Category c inner join Product p
+	on c.categoryId = p.categoryId
+	önce category sonra product git.
+	
+	
+	select p.productId, p.productname, c.categoryName from Category c inner
+	
+	from → tüm alanları çeker
+	select → bazı alanları çeker.
+	package name çekmek gerekiyor.
+	başa new eklemeyi unutmak
+	
+	imza → List<ProductWithCDategoryDto> getProductWithCategoryDetails();
+	product service git.
+	postgre sql query
+	select p.product_id,p.product_name, c.category_name,p.unit_price from products p inner join categories c on p.category_id =c.category_id
+	 **/
+	
+	
+	 //select * from products where product_name=bisey and categoryId=bisey
+	@Query("Select new kodlamaio.northwind.entities.dtos.ProductWithCategoryDto"
+		+ "(p.id, p.productName, c.categoryName)"
+		+ "From Category c Inner Join c.products p")
+	List<ProductWithCategoryDto> getProductWithCategoryDetails();
+
+//select p.productId,p.productName, c.categoryName  from Category c inner join Product p
+//on c.categoryId = p.categoryId
+	
 	
 }
 
 
 
-
+/*
+* JPQL --Altın kural veritabanı tablosunu unut Entity bu. Sanki veritabanı entity miş gibi düşün!
+* parametre geçmek : ? @
+* select * from product where product_name=something and categoryId=something
+ * */
 
 
 //interface interface i extends eder. 
