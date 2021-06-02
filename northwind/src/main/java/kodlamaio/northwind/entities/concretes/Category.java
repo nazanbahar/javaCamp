@@ -19,7 +19,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @Table(name="categories")
 @Entity
-@JsonIgnoreProperties({"hibernateLazyInitializer","handler","products"}) //map ettiğimiz kadarını getir.
+@JsonIgnoreProperties({"hibernateLazyInitializer","handler","products"}) 
 public class Category {
 	
 	@Id
@@ -27,16 +27,11 @@ public class Category {
 	private int categoryId;
 	
 	@Column(name="category_name")
-	private String categoryNameString;
+	private String categoryName;
 
 	/*@OneToMany*/
 	@OneToMany(mappedBy = "category")
 	private List<Product> products;
 }
 
-//UNUTMA: bu bir ana tablodur. one to many 
-//birinci parametre mapby
 
-//product dan category ye → manyToOne
-//category den product a → oneToMany
-//hangi tablodaysan ilişkilendirdiğin tabloya geçiş
